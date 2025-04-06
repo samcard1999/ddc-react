@@ -1,0 +1,98 @@
+.swiper-slide {
+  width: auto;
+  cursor: pointer;
+  filter: blur(1.5px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.8s, filter 0.8s, transform 0.8s;
+}
+
+.swiper-slide-active {
+  transition: opacity 0.8s, filter 0.8s, transform 0.8s;
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.swiper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.swiper {
+  width: 100%;
+  padding-bottom: 5vh;
+}
+
+.swiper-3d,
+.swiper-3d.swiper-css-mode .swiper-wrapper {
+  perspective: 1500px;
+}
+
+.flechas {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.swiper-next-button,
+.swiper-prev-button {
+  border-radius: 50%;
+  transition: transform 0.5s ease, background-color 0.4s ease;
+}
+
+.swiper-next-button:hover,
+.swiper-prev-button:hover {
+  transform: scale(1.1);
+  background-color: #bac0c6;
+}
+
+.swiper-pagination {
+  width: auto !important;
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #5e6673;
+
+  height: 1vw;
+  width: 1vw;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #162d57;
+  height: 1vw;
+  width: 1vw;
+}
+
+@media (max-width: 1024px) {
+  .swiper-pagination-bullet {
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  .flechas svg {
+    width: 3vw;
+  }
+}
+
+@media (max-width: 479px) {
+  .swiper-next-button,
+  .swiper-prev-button {
+    display: none;
+  }
+}
