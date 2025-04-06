@@ -1,7 +1,6 @@
 @font-face {
   font-family: "LouisGeorgeCafeBold";
-  src: url("../../public/assets/fonts/LouisGeorgeCafe-Bold.woff2")
-    format("woff2");
+  src: url("/assets/fonts/LouisGeorgeCafe-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: "LouisGeorgeCafeNormal";
-  src: url("../../public/assets/fonts/LouisGeorgeCafe-Normal.woff2")
-    format("woff2");
+  src: url("/assets/fonts/LouisGeorgeCafe-Normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -18,8 +16,7 @@
 
 @font-face {
   font-family: "LouisGeorgeCafeLight";
-  src: url("../../public/assets/fonts/LouisGeorgeCafe-Light.woff2")
-    format("woff2");
+  src: url("/assets/fonts/LouisGeorgeCafe-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -27,8 +24,7 @@
 
 @font-face {
   font-family: "LouisGeorgeCafe";
-  src: url("../../public/assets/fonts/LouisGeorgeCafe-Normal.woff2")
-    format("woff2");
+  src: url("/assets/fonts/LouisGeorgeCafe-Normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -214,7 +210,7 @@
   }
 }
 
-#menuToggle {
+#menuToggle1 {
   position: relative;
   top: unset;
   right: unset;
@@ -227,7 +223,7 @@
   z-index: 40;
 }
 
-.menuToggle-span {
+.menuToggle-span1 {
   display: block;
   width: 33px;
   height: 4px;
@@ -239,6 +235,137 @@
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   background: #162d57 !important;
+}
+
+#menuToggle1 a,
+button {
+  background-color: transparent;
+  text-decoration: none;
+  color: #070f1d;
+  transition: color 0.3s ease;
+}
+
+#menuToggle1 a:hover {
+  color: rgb(35, 93, 160);
+}
+
+#menuToggle1 button:hover {
+  color: rgb(35, 93, 160);
+}
+
+#menuToggle1 input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle1 span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #070f1d;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle1 span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle1 span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle1 input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle1 input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle1 input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  max-width: 200px;
+  width: 100vw;
+  max-height: 100vh;
+  margin: -40px 0 0 -80px;
+  padding: 50px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #5e667360;
+  backdrop-filter: blur(10px); /* Desenfoque del fondo */
+  -webkit-backdrop-filter: blur(
+    10px
+  ); /* Desenfoque del fondo para navegadores basados en WebKit */
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  left: -260%;
+  transform-origin: 0% 0%;
+  transform: translate(120%, 0);
+  border-radius: 20px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 12px 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+#menu li label {
+  cursor: pointer;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle1 input:checked ~ ul {
+  transform: none;
 }
 
 .swiper-container-1 {
@@ -556,12 +683,12 @@
   .mobile-banner {
     justify-content: space-between;
   }
-  #menuToggle {
+  #menuToggle1 {
     position: relative;
     top: unset;
     right: unset;
   }
-  #menuToggle span {
+  #menuToggle1 span {
     background: #dcdfe2 !important;
   }
   .contact-button {

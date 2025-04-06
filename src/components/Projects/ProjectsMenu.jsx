@@ -4,12 +4,12 @@ const ProjectsMenu = () => {
   const navigate = useNavigate();
 
   return (
-    <div id="menuToggle">
+    <div id="menuToggle1">
       <input type="checkbox" id="menuCheckbox" />
 
-      <span className="menuToggle-span" />
-      <span className="menuToggle-span" />
-      <span className="menuToggle-span" />
+      <span className="menuToggle-span1" />
+      <span className="menuToggle-span1" />
+      <span className="menuToggle-span1" />
 
       <ul id="menu">
         <li>

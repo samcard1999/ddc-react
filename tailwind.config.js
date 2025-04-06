@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], // Asegúrate de incluir tus archivos
+  content: ["./index.html", "./src/**/**/.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"], // Asegúrate de incluir tus archivos
   theme: {
     extend: {
       colors: {
@@ -9,3 +9,4 @@ module.exports = {
   },
   plugins: [],
 };
+
