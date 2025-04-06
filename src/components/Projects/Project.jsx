@@ -22,7 +22,7 @@ const Project = () => {
   return (
     <>
       <Helmet>
-        <title>Welcome to my website</title>
+        <title>{project.title}</title>
       </Helmet>
       <div className="project-container">
         <div className="mobile-banner">
