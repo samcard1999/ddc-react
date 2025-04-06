@@ -103,79 +103,79 @@ const Projects = () => {
       price: "$2.8 M"
     },
     {
-      id: 4,
+      id: "Villa_Santa_Marta",
       title: "Villa Santa Marta",
       image: "/assets/images/Villa_Santa_Marta/2.jpg",
       price: "$2.8 M"
     },
     {
-      id: 5,
+      id: "Villa_Barranquilla",
       title: "Villa Barranquilla",
-      image: "/assets/images/Barranquilla/3.jpg",
+      image: "/assets/images/Villa_Barranquilla/3.jpg",
       price: "$2.8 M"
     },
     {
-      id: 6,
+      id: "Villa_Sunset",
       title: "Villa Sunset",
       image: "/assets/images/Villa_Sunset/1.jpg",
       price: "$2.6 M"
     },
     {
-      id: 7,
+      id: "Villa_JH",
       title: "Villa JH",
       image: "/assets/images/Villa_JH/3.jpg",
       price: "$2.2 M"
     },
     {
-      id: 8,
+      id: "Villa_Oasis",
       title: "Villa Oasis",
       image: "/assets/images/Villa_Oasis/2.jpg",
       price: "$3.99 M"
     },
     {
-      id: 9,
+      id: "Villa_Nukes",
       title: "Villa Nukes",
       image: "/assets/images/Villa_Nukes/7.jpg",
       price: "$675 K"
     },
     {
-      id: 10,
+      id: "Villa_Maria",
       title: "Villa Maria",
       image: "/assets/images/Villa_Maria/1.jpg",
       price: "$675 K"
     },
     {
-      id: 11,
+      id: "Villa_Ciego_de_Avila",
       title: "Villa Ciego de Avila",
-      image: "/assets/images/Ciego_de_Avila/5.jpg",
+      image: "/assets/images/Villa_Ciego_de_Avila/5.jpg",
       price: "$675 K"
     },
     {
-      id: 12,
+      id: "Villa_Don_Quixote",
       title: "Villa Don Quixote",
-      image: "/assets/images/Don_Quijote/1.jpg",
+      image: "/assets/images/Villa_Don_Quixote/1.jpg",
       price: "$2 M"
     },
     {
-      id: 13,
+      id: "Villa_Nelson",
       title: "Villa Nelson",
-      image: "/assets/images/Nelson/2.jpg",
+      image: "/assets/images/Villa_Nelson/2.jpg",
       price: "$2 M"
     },
     {
-      id: 14,
+      id: "Villa_Dorticos",
       title: "Villa Dorticos",
       image: "/assets/images/Villa_Dorticos/6.jpg",
       price: "$2 M"
     },
     {
-      id: 15,
+      id: "Villa_Esplanade",
       title: "Villa Esplanade",
-      image: "/assets/images/Villa_Splanade/7.jpg",
+      image: "/assets/images/Villa_Esplanade/7.jpg",
       price: "$675 K"
     },
     {
-      id: 16,
+      id: "Villa_Atlantico",
       title: "Villa Atlantico",
       image: "/assets/images/Villa_Atlantico/1.jpg",
       price: "$2 M"
