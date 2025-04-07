@@ -202,9 +202,9 @@ const Footer = () => {
                   <a
                     className="flex items-center gap-12 text-21 color-main"
                     target="_blank"
-                    href="https://www.google.com/maps/place/2761+NW+79th+Ave+Miami+FL+33122+US"
+                    href="https://maps.app.goo.gl/5MWU4AVmGP8TjggM8"
                   >
-                    2761NW 79th Ave Miami, FL 33122 US
+                    3470 NW 82nd Ave, Suite 790
                   </a>
                 </li>
               </ul>
