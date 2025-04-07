@@ -28,6 +28,7 @@ import { Textarea } from "../ui/textarea.tsx";
 import { Toaster, toast } from "sonner";
 import ContactButton from "./ContactButton.jsx";
 import SendButton from "./SendButton.jsx";
+import { useLocation } from "react-router-dom";
 
 const FormSchema = z.object({
   username: z.string().min(2, {
@@ -43,7 +44,7 @@ const FormSchema = z.object({
 
 export function ContactForm() {
   const formRef = useRef(null);
-
+  const location = useLocation();
   // configure Zod default values for the form
   const form = useForm({
     resolver: zodResolver(FormSchema),
@@ -55,7 +56,11 @@ export function ContactForm() {
   });
 
   const onSubmit = (data) => {
-    console.log("ola");
+    const extraMessage = `It looks like this client is interested in ${location.pathname
+      .split("/")
+      .pop()}. Here is his message:\n`;
+    const messageField = formRef.current.message;
+    messageField.value = extraMessage + messageField.value;
     if (formRef.current) {
       emailjs
         .sendForm(
@@ -74,11 +79,7 @@ export function ContactForm() {
             });
           },
           (error) => {
-            toast({
-              variant: "destructive",
-              title: "Email failed to send.",
-              description: `Please contact support if this continues.`
-            });
+            toast.error("Failed to send. Check your internet connection.");
             console.warn("FAILED...", JSON.stringify(error));
           }
         );
