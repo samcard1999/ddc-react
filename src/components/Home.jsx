@@ -6,6 +6,7 @@ import ModularDesign from "./ModularDesign.jsx";
 import Footer from "./Footer.jsx";
 import Menu from "./Menu.jsx";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const { hash } = useLocation();
@@ -20,6 +21,11 @@ const Home = () => {
   }, [hash]);
   return (
     <>
+      <Helmet>
+        <title>
+          The DDC Way | Fast & Sustainable Modular Construction in Miami
+        </title>
+      </Helmet>
       <Menu />
       <Header />
       <About />

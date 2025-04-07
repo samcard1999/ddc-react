@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import Carousel from "./Carousel";
 import Info from "./Info";
 import BackButton from "./BackButton";
@@ -12,11 +12,14 @@ import { ContactForm } from "./ContactForm";
 const Project = () => {
   const { projectId } = useParams();
   const [project, setProject] = useState(null);
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const foundProject = projectsData.find((p) => p.id === projectId);
     setProject(foundProject);
-  }, [projectId]);
+
+    window.scrollTo(0, 0);
+  }, [projectId, pathname]);
   if (!project) return <div className="loading">Cargando proyecto...</div>;
 
   return (
@@ -27,7 +30,6 @@ const Project = () => {
       <div className="project-container">
         <div className="mobile-banner">
           <ContactForm />
-
           <ProjectsMenu />
         </div>
         <Info

@@ -14,6 +14,7 @@ const Map = ({ mapa_title }) => {
           floorQuantity === 1 ? `mapa.png` : `map_floor_${count}.png`
         }`}
         alt={mapa_title}
+        loading="eager"
       />
       <img
         className="camera"

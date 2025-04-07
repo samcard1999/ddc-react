@@ -189,7 +189,19 @@
     },
     {
         "id": "Villa_JH",
-        
+        "coordenadas": [
+            { "id": 11, "x": 170.1, "y": 137.6, "a": 135, "x_shadow": 207.6, "y_shadow": 164.15 },
+            { "id": 12, "x": 210.22, "y": 142.86, "a": -28, "x_shadow": 174.84, "y_shadow": 91.33 },
+            { "id": 13, "x": 300.29, "y": 88.1, "a": -90, "x_shadow": 179.7, "y_shadow": 91.24 },
+            { "id": 14, "x": 251.1, "y": 98.16, "a": 90, "x_shadow": 290.47, "y_shadow": 91.42 },
+            { "id": 15, "x": 277.44, "y": 45.231, "a": 135, "x_shadow": 315.7, "y_shadow": 75.27 },
+            { "id": 16, "x": 349.45, "y": 66.05, "a": -180, "x_shadow": 342.27, "y_shadow": 105.15 },  
+            { "id": 17, "x": 296.87, "y": 117.78, "a": 90, "x_shadow": 337.43, "y_shadow": 91.42 },
+            { "id": 18, "x": 119.06, "y": 99.8, "a": -25, "x_shadow": 81.63, "y_shadow": 37.15 },
+            { "id": 19, "x": 45.87, "y": 91.277, "a": 0, "x_shadow": 37.27, "y_shadow": 38.33 },
+            { "id": 20, "x":3.55, "y": 48.9, "a": 180, "x_shadow": 19.9, "y_shadow": 88.47 },
+            { "id": 21, "x":229.85, "y": 170.31, "a": 140, "x_shadow": 259.12, "y_shadow": 199.135 }
+        ],
         "title": "Villa JH",
         "folder": "Villa_JH",
         "address": "7861 SW 181st Terr, Palmetto Bay, FL 33157",
@@ -197,8 +209,8 @@
         "description": "Timeless lines, warm materials, and lush privacy define this home’s identity. Surrounded by curated landscaping and tall palms, the architecture blends clean geometry with textured wood accents. Inside, high ceilings and natural light shape serene, open interiors — from the game room to the spa-like bath. The pool and outdoor bar area invite calm afternoons and social evenings, merging indoor and outdoor living seamlessly. Every space is designed to feel intentional, elegant, and welcoming.",
         "total_images": 29,
         "mapa": {
-            "width": 429.3,
-            "height": 438
+            "width": 421,
+            "height": 287.3
         }
     },
     {
@@ -424,7 +436,7 @@
         "address": "3675 Whippoorwill Blvd,Punta Gorda, Fl",
         "distribution": "4 Beds ● 4 Baths",
         "description": "This modern home harmonizes with its natural surroundings through a minimalist exterior, clean lines, and earthy tones. Wooden accents and dark textures add elegance while blending with the lush greenery. Inside, neutral palettes, natural materials like wood and stone, and an open-plan layout maximize light and comfort. Floor-to-ceiling curtains and indoor greenery enhance the connection to nature, creating a tranquil and balanced space for relaxation.",
-        "total_images": 25,
+        "total_images": 20,
         "mapa": {
             "width":466,
             "height": 419.4
