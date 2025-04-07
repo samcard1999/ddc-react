@@ -175,7 +175,22 @@
     },
     {
         "id": "Villa_Sunset",
+        "coordenadas": [
+            { "id": 8, "floor": 1, "x": 19.69, "y": 186.19, "a": 90, "x_shadow": 60.94, "y_shadow": 157.23 },
+            { "id": 9, "floor": 1, "x": 96.5, "y": 133.99, "a": 218, "x_shadow": 48, "y_shadow": 176.62 },
+            { "id": 10, "floor": 1, "x": 180.84, "y": 121.03, "a": 220, "x_shadow": 163.6, "y_shadow": 158.9 },
+            { "id": 11, "floor": 1, "x": 203.35, "y": 137.088, "a": 58, "x_shadow": 233.67, "y_shadow": 101.84 },
+            { "id": 12, "floor": 1, "x": 225.18, "y": 64.11, "a": -18, "x_shadow": 180.34, "y_shadow": 4.9 },
+            { "id": 13, "floor": 1, "x": 213.44, "y": 51.9, "a": 0, "x_shadow": 180.78, "y_shadow": 3.79 },
+            { "id": 14, "floor": 2, "x": 128.35, "y": 160.98, "a": 65, "x_shadow": 164.141, "y_shadow": 124.3 },
+            { "id": 15, "floor": 2, "x": 149.11, "y": 233.58, "a": 48, "x_shadow": 173.98, "y_shadow": 185.86 },
+            { "id": 16, "floor": 2, "x": 194.05, "y": 120.84, "a": 200, "x_shadow": 186.42, "y_shadow": 161.45 },
+            { "id": 17, "floor": 2, "x": 182.92, "y": 195.48, "a": -90, "x_shadow": 140.3, "y_shadow": 187.85 },
+            { "id": 18, "floor": 2, "x": 16.40, "y": 2.12, "a": 180, "x_shadow": 5.84, "y_shadow": 42.29 },
+            { "id": 19, "floor": 2, "x": 144.9, "y": 185, "a": 135, "x_shadow": 183.03, "y_shadow": 213.87 },
+            { "id": 20, "floor": 2, "x": 152.68, "y": 207.76, "a": 220, "x_shadow": 140.86, "y_shadow": 250.06 }
         
+        ],
         "title": "Villa Sunset",
         "folder": "Villa_Sunset",
         "address": "7765 SW 57th Terrace, Miami, FL 33143",
@@ -183,8 +198,10 @@
         "description": "A home in harmony with its tropical surroundings. Clean lines meet a striking wooden cylinder that marks the entrance. The curved driveway and lush landscaping guide the experience. Inside, high ceilings with exposed wooden beams and a warm palette define a cozy yet refined atmosphere. Villa Sunset celebrates architecture as a seamless extension of nature.",
         "total_images": 33,
         "mapa": {
-            "width": 429.3,
-            "height": 438
+            "width": 291.05,
+            "height":322.54,
+            "width_floor_2":255.73,
+            "height_floor_2":360.7 
         }
     },
     {
@@ -440,6 +457,59 @@
         "mapa": {
             "width":466,
             "height": 419.4
+        }
+    },
+    {
+        "id": "Villa_Anzola",
+        "coordenadas": [
+            { "id": 7, "x": 155.77, "y": 128.58, "a": -90, "x_shadow": 82.13, "y_shadow": 127.19 },
+            { "id": 8, "x": 164.61, "y": 157.94, "a": -78, "x_shadow": 82.13, "y_shadow": 126.27 },
+            { "id": 9, "x": 117.10, "y": 213.35, "a": 90, "x_shadow": 158.19, "y_shadow": 212.86 },
+            { "id": 10, "x": 113.8, "y": 116.8, "a": 155, "x_shadow": 137.99, "y_shadow": 155.25 },
+            { "id": 11, "x": 31.02, "y": 162.56, "a": 220, "x_shadow": 10.25, "y_shadow": 201.39 },
+            { "id": 12, "x": 31.73, "y": 230.53, "a": -30, "x_shadow": 9.95, "y_shadow": 197.83 },
+            { "id": 13, "x": 168.18, "y": 132.47, "a": 90, "x_shadow": 208.92, "y_shadow": 126.95 },
+            { "id": 14, "x": 217.66, "y": 99.3, "a": -120, "x_shadow": 193.19, "y_shadow": 126.27 },
+            { "id": 15, "x": 190.36, "y": 152.42, "a": 180, "x_shadow": 205.74, "y_shadow": 192.16 },
+            { "id": 16, "x": 211.42, "y": 133.33, "a": 90, "x_shadow": 251.47, "y_shadow": 126.27 },
+            { "id": 17, "x": 222, "y": 126.86, "a": 90, "x_shadow": 262.79, "y_shadow": 124.7 }
+        ],
+        "title": "Villa Anzola",
+        "folder": "Villa_Anzola",
+        "address": "3701 Oak Avenue, Miami, FL 33133",
+        "distribution": "4 Beds ● 3 Baths",
+        "description": "A bespoke architectural gem in Miami. This refined tropical residence blends natural elegance with contemporary design, offering an exclusive living experience where every detail is crafted for distinction, comfort, and timeless sophistication.",
+        "total_images": 24,
+        "mapa": {
+            "width":333.3,
+            "height": 303.6
+        }
+    },
+    {
+        "id": "Villa_Gabriel",
+        "coordenadas": [
+            { "id": 9, "x": 202.92, "y": 76.28, "a": -35, "x_shadow": 163.24, "y_shadow": 50.15 },
+            { "id": 10, "x": 189.57, "y": 45.17, "a": -90, "x_shadow": 163.77, "y_shadow": 58.11 },
+            { "id": 11, "x": 32.04, "y": 98.89, "a": -110, "x_shadow": 11.18, "y_shadow": 125.104 },
+            { "id": 12, "x": 190.49, "y": -5.17, "a": 117, "x_shadow": 227.9, "y_shadow": 2.7 },
+            { "id": 13, "x": 203.19, "y": 47, "a": 70, "x_shadow": 242.71, "y_shadow": 2.79 },
+            { "id": 14, "x": 70.15, "y": 63.52, "a": 0, "x_shadow": 67.14, "y_shadow": 24.36 },
+            { "id": 15, "x": 61.91, "y": 42.65, "a": 0, "x_shadow": 67.5, "y_shadow": 24.51 },
+            { "id": 16, "x": 34.83, "y": 45.79, "a": -50, "x_shadow": 8.56, "y_shadow": 24.84 },
+            { "id": 17, "x": 34.84, "y": 34.14, "a": -90, "x_shadow": 11.74, "y_shadow": 41.4 },
+            { "id": 18, "x": 38.19, "y": 44.89, "a": 0, "x_shadow": 44.3, "y_shadow": 24.8 },
+            { "id": 19, "x": 96.35, "y": 84.46, "a": 140, "x_shadow": 124.69, "y_shadow": 118.63 },
+            { "id": 20, "x": 143.09, "y": 82.7, "a": 222, "x_shadow": 124.69, "y_shadow": 122.3 }
+        ],
+        "title": "Villa Gabriel",
+        "folder": "Villa_Gabriel",
+        "address": "6650 SW 94th Ave Miami, FL 33173",
+        "distribution": "5 Beds ● 4 Baths",
+        "description": "A sophisticated residence in Miami that redefines classic elegance with a contemporary soul. From sculpted arches to bold interior accents, every space is tailored for comfort, privacy, and refined living in a lush tropical setting.",
+        "total_images": 25,
+        "mapa": {
+            "width":310.11 ,
+            "height": 186.34
         }
     }
 

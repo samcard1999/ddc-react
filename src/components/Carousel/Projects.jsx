@@ -179,6 +179,18 @@ const Projects = () => {
       title: "Villa Atlantico",
       image: "/assets/images/Villa_Atlantico/1.jpg",
       price: "$2 M"
+    },
+    {
+      id: "Villa_Anzola",
+      title: "Villa Anzola",
+      image: "/assets/images/Villa_Anzola/6.jpg",
+      price: "$650 K"
+    },
+    {
+      id: "Villa_Gabriel",
+      title: "Villa Gabriel",
+      image: "/assets/images/Villa_Gabriel/1.jpg",
+      price: "$3.6 M"
     }
   ];
 
