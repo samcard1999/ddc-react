@@ -91,7 +91,7 @@ export function ContactForm() {
       <DialogTrigger>
         <ContactButton className="contact-button" />
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] dialog h-auto ">
+      <DialogContent className="sm:max-w-[425px] dialog h-auto !p-6">
         <DialogHeader>
           <DialogTitle className="dialog-title text-[#070f1d] text-8xl">
             Contact Us
@@ -105,7 +105,7 @@ export function ContactForm() {
           <form
             ref={formRef} //Required by EmailJS
             onSubmit={form.handleSubmit(onSubmit)}
-            className=" space-y-6"
+            className=" !space-y-6"
           >
             <FormField
               name="username"
