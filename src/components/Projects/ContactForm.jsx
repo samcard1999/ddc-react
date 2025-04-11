@@ -12,7 +12,8 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage
+  FormMessage,
+  FormDescription
 } from "../ui/form.tsx";
 import {
   Dialog,
@@ -28,7 +29,8 @@ import { Textarea } from "../ui/textarea.tsx";
 import { Toaster, toast } from "sonner";
 import ContactButton from "./ContactButton.jsx";
 import SendButton from "./SendButton.jsx";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const FormSchema = z.object({
   username: z.string().min(2, {
@@ -39,6 +41,9 @@ const FormSchema = z.object({
   }),
   message: z.string().min(10, {
     message: "Message should be at least 10 characters."
+  }),
+  terms: z.literal(true, {
+    errorMap: () => ({ message: "You must accept the terms and policies" })
   })
 });
 
@@ -93,10 +98,10 @@ export function ContactForm() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] dialog h-auto !p-6">
         <DialogHeader>
-          <DialogTitle className="dialog-title text-[#070f1d] text-8xl">
+          <DialogTitle className="dialog-title text-[#dcdfe2] !text-2xl">
             Contact Us
           </DialogTitle>
-          <DialogDescription className="text-[#070f1d]">
+          <DialogDescription className="text-[#dcdfe2]">
             We’d be delighted to read your message and get back to you as soon
             as possible!
           </DialogDescription>
@@ -111,7 +116,7 @@ export function ContactForm() {
               name="username"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-lg text-[#070f1d]">Name</FormLabel>
+                  <FormLabel className="text-lg text-[#dcdfe2]">Name</FormLabel>
                   <FormControl>
                     <Input
                       className="border-primary bg-white"
@@ -128,7 +133,7 @@ export function ContactForm() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-lg text-[#070f1d]">
+                  <FormLabel className="text-lg text-[#dcdfe2]">
                     Email
                   </FormLabel>
                   <FormControl>
@@ -147,7 +152,7 @@ export function ContactForm() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-lg text-[#070f1d]">
+                  <FormLabel className="text-lg text-[#dcdfe2]">
                     Message
                   </FormLabel>
                   <FormControl>
@@ -159,6 +164,35 @@ export function ContactForm() {
                     />
                   </FormControl>
                   <FormMessage className="text-xs text-red-600" />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="terms"
+              render={({ field }) => (
+                <FormItem className="flex flex-row">
+                  <FormControl>
+                    <Checkbox
+                      className="!w-5 !h-5 !data-[state=checked]:bg-red-500"
+                      checked={field.value}
+                      onCheckedChange={field.onChange}
+                    />
+                  </FormControl>
+                  <div className="space-y-1 leading-none flex flex-col">
+                    <FormLabel className="text-[#bac0c6]">
+                      Accept terms and conditions
+                    </FormLabel>
+                    <FormDescription>
+                      You agree to our Terms of Service and{" "}
+                      <Link target="_blank" to="/privacy-policy">
+                        <strong>
+                          <u>Privacy Policy</u>
+                        </strong>
+                        .
+                      </Link>
+                    </FormDescription>
+                  </div>
                 </FormItem>
               )}
             />

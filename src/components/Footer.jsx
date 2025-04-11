@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -285,12 +286,14 @@ const Footer = () => {
           <div className="col-span-7 mb-2">
             <div className="w-full sm:gap-0 gap-2 flex sm:flex-row flex-col items-center justify-center">
               <div className="footer-banner flex items-center gap-2 sm:order-2 order-1">
-                <p
+                <Link
                   className="open-Policy text-21 color-main cursor-pointer"
                   data-target="privacyPolicy"
+                  to="/privacy-policy"
+                  target="_blank"
                 >
                   <strong>Privacy Policy</strong>
-                </p>
+                </Link>
                 <div className="flex sm:flex-row items-center gap-2">
                   <p className="text-21 color-main sm:order-1 order-3">
                     ©2025 DDC Developments Co.

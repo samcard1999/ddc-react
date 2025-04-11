@@ -20,7 +20,7 @@ const Project = () => {
 
     window.scrollTo(0, 0);
   }, [projectId, pathname]);
-  if (!project) return <div className="loading">Cargando proyecto...</div>;
+  if (!project) return <div className="loading">Loading Project...</div>;
 
   return (
     <>

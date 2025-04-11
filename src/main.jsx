@@ -2,13 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals.js";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import Project from "./components/Projects/Project.jsx";
 import Home from "./components/Home.jsx";
 import store from "./redux/store.js";
 import { Provider } from "react-redux";
 import { ContactForm } from "./components/Projects/ContactForm";
 import { Toaster } from "sonner";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,8 +19,9 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project/contact" element={<ContactForm />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="projects/:projectId" element={<Project />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

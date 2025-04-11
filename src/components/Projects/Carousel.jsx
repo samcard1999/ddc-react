@@ -10,6 +10,7 @@ import Map from "./Map";
 import { Keyboard, Mousewheel } from "swiper/modules";
 import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment } from "./floorCounterSlice";
+import { current } from "./SlideCurrentSlice";
 import { oneFloor, twoFloor } from "./floorQuantitySlice";
 import { updateDimensions } from "./mapDimensionsSlice";
 import { useEffect } from "react";
@@ -59,8 +60,11 @@ const Carousel = ({
         speed={550}
         observeSlideChildren={true}
         onSlideChange={(swiper) => {
+          const index = swiper.activeIndex + 1;
+          dispatch(
+            current(`/assets/images/${images_folder}/${index + 1}.jpeg`)
+          );
           if (coordenadas) {
-            const index = swiper.activeIndex + 1;
             const cord = coordenadas.find((coord) => coord.id === index);
             dispatch(oneFloor());
             if (cord && cord.floor) {

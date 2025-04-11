@@ -31,7 +31,7 @@ const StyledWrapper = styled.div`
   button {
     font-family: inherit;
     font-size: 15px;
-    background: #162d6770;
+    background: #dcdfe270;
     backdrop-filter: blur(10px); /* Desenfoque del fondo */
     -webkit-backdrop-filter: blur(
       10px
