@@ -194,10 +194,10 @@ const Footer = () => {
               <ul className="contact-info link flex flex-col">
                 <li>
                   <a
-                    href="mailto:danilo@ddcdevelopments.com"
+                    href="mailto:info@ddcdevelopments.com"
                     className="flex items-center gap-12 text-21 color-main"
                   >
-                    danilo@ddcdevelopments.com
+                    info@ddcdevelopments.com
                   </a>
                 </li>
                 <li>

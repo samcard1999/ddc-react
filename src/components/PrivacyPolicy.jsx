@@ -101,8 +101,8 @@ const PrivacyPolicy = () => {
             how your personal information is processed. If you do not agree with
             our policies and practices, please do not use our Services. If you
             still have any questions or concerns, please contact us at
-            <a href="mailto:danilo@ddcdevelopments.com">
-              danilo@ddcdevelopments.com
+            <a href="mailto:info@ddcdevelopments.com">
+              info@ddcdevelopments.com
             </a>
             .
           </li>
@@ -891,8 +891,8 @@ const PrivacyPolicy = () => {
         <p>
           If you have questions or comments about this notice, you may email us
           at
-          <a href="mailto:danilo@ddcdevelopments.com">
-            danilo@ddcdevelopments.com{" "}
+          <a href="mailto:info@ddcdevelopments.com">
+            info@ddcdevelopments.com{" "}
           </a>
           or contact us by post at:
         </p>
@@ -914,7 +914,7 @@ const PrivacyPolicy = () => {
           personal information. These rights may be limited in some
           circumstances by applicable law. To request to review, update, or
           delete your personal information, please contact us at
-          danilo@ddcdevelopments.com{" "}
+          info@ddcdevelopments.com{" "}
         </p>
       </div>
     </>
