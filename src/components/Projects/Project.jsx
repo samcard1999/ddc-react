@@ -27,7 +27,7 @@ const Project = () => {
       <Helmet>
         <title>{project.title}</title>
       </Helmet>
-      <div className="project-container">
+      <div className="project-container bg-[#070f1d]">
         <div className="mobile-banner">
           <ContactForm />
           <ProjectsMenu />

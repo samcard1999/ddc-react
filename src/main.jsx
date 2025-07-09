@@ -10,11 +10,13 @@ import { Provider } from "react-redux";
 import { ContactForm } from "./components/Projects/ContactForm";
 import { Toaster } from "sonner";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import AnimatedBackground from "./components/Background/Background";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <React.StrictMode>
+      <AnimatedBackground />
       <Toaster position="bottom-right" />
       <BrowserRouter>
         <Routes>

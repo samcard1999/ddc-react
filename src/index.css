@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #070f1d;
+  background-color: #dcdfe2;
   position: relative;
   font-family: "LouisGeorgeCafeNormal", sans-serif;
   font-size: 16px;
@@ -1756,9 +1756,9 @@ s button {
   }
 }
 
-.bg-mid-white {
+/* .bg-mid-white {
   background: #dcdfe2;
-}
+} */
 
 .mid-grey {
   color: #dcdfe2;
@@ -2033,7 +2033,7 @@ input::placeholder {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #dcdfe2;
+  //background-color: #dcdfe2;
   justify-content: space-between;
   display: flex;
   flex-direction: column;

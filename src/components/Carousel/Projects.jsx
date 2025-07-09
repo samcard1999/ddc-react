@@ -41,8 +41,8 @@ const Projects = () => {
         onComplete: () => {
           // Refrescar todos los ScrollTrigger al finalizar la animación
           ScrollTrigger.refresh();
-        }
-      }
+        },
+      },
     });
 
     timeline.to("#projects", {
@@ -55,27 +55,27 @@ const Projects = () => {
         scrub: true,
         onUpdate: (self) => {
           const progress = self.progress;
-          gsap.to(".about-section", {
-            opacity: 1 - progress * 0.65,
-            overwrite: "auto",
-            ease: "elastic.out(1,0.3)"
-          });
-          gsap.to(".about-section", {
-            y: `${progress * 200}px`,
-            overwrite: "auto"
-          });
+          // gsap.to(".about-section", {
+          //   opacity: 1 - progress * 0.65,
+          //   overwrite: "auto",
+          //   ease: "elastic.out(1,0.3)",
+          // });
+          // gsap.to(".about-section", {
+          //   y: `${progress * 200}px`,
+          //   overwrite: "auto",
+          // });
 
           gsap.to("#projects", {
             borderTopLeftRadius: `${3.125 - 3.125 * progress}vw`,
             borderTopRightRadius: `${3.125 - 3.125 * progress}vw`,
-            overwrite: "auto"
+            overwrite: "auto",
           });
         },
         onComplete: () => {
           // Refrescar todos los ScrollTrigger al finalizar la animación
           ScrollTrigger.refresh();
-        }
-      }
+        },
+      },
     });
   });
 
@@ -88,110 +88,110 @@ const Projects = () => {
       id: "Villa_Victor",
       title: "Villa Victor",
       image: "/assets/images/Villa_Victor/1.jpg",
-      price: "$5 M"
+      price: "$5 M",
     },
     {
       id: "Villa_Guajira",
       title: "Villa Guajira",
       image: "/assets/images/Villa_Guajira/6.jpg",
-      price: "$2.8 M"
+      price: "$2.8 M",
     },
     {
       id: "Villa_Cartagena",
       title: "Villa Cartagena",
       image: "/assets/images/Villa_Cartagena/1.jpg",
-      price: "$2.8 M"
+      price: "$2.8 M",
     },
     {
       id: "Villa_Santa_Marta",
       title: "Villa Santa Marta",
       image: "/assets/images/Villa_Santa_Marta/2.jpg",
-      price: "$2.8 M"
+      price: "$2.8 M",
     },
     {
       id: "Villa_Barranquilla",
       title: "Villa Barranquilla",
       image: "/assets/images/Villa_Barranquilla/3.jpg",
-      price: "$2.8 M"
+      price: "$2.8 M",
     },
     {
       id: "Villa_Sunset",
       title: "Villa Sunset",
       image: "/assets/images/Villa_Sunset/1.jpg",
-      price: "$2.6 M"
+      price: "$2.6 M",
     },
     {
       id: "Villa_JH",
       title: "Villa JH",
       image: "/assets/images/Villa_JH/3.jpg",
-      price: "$2.2 M"
+      price: "$2.2 M",
     },
     {
       id: "Villa_Oasis",
       title: "Villa Oasis",
       image: "/assets/images/Villa_Oasis/2.jpg",
-      price: "$3.99 M"
+      price: "$3.99 M",
     },
     {
       id: "Villa_Nukes",
       title: "Villa Nukes",
       image: "/assets/images/Villa_Nukes/7.jpg",
-      price: "$675 K"
+      price: "$675 K",
     },
     {
       id: "Villa_Maria",
       title: "Villa Maria",
       image: "/assets/images/Villa_Maria/1.jpg",
-      price: "$675 K"
+      price: "$675 K",
     },
     {
       id: "Villa_Ciego_de_Avila",
       title: "Villa Ciego de Avila",
       image: "/assets/images/Villa_Ciego_de_Avila/5.jpg",
-      price: "$675 K"
+      price: "$675 K",
     },
     {
       id: "Villa_Don_Quixote",
       title: "Villa Don Quixote",
       image: "/assets/images/Villa_Don_Quixote/1.jpg",
-      price: "$2 M"
+      price: "$2 M",
     },
     {
       id: "Villa_Nelson",
       title: "Villa Nelson",
       image: "/assets/images/Villa_Nelson/2.jpg",
-      price: "$2 M"
+      price: "$2 M",
     },
     {
       id: "Villa_Dorticos",
       title: "Villa Dorticos",
       image: "/assets/images/Villa_Dorticos/6.jpg",
-      price: "$2 M"
+      price: "$2 M",
     },
     {
       id: "Villa_Esplanade",
       title: "Villa Esplanade",
       image: "/assets/images/Villa_Esplanade/7.jpg",
-      price: "$675 K"
+      price: "$675 K",
     },
     {
       id: "Villa_Atlantico",
       title: "Villa Atlantico",
       image: "/assets/images/Villa_Atlantico/1.jpg",
-      price: "$2 M"
+      price: "$2 M",
     },
     {
       id: "Villa_Anzola",
       title: "Villa Anzola",
       image: "/assets/images/Villa_Anzola/6.jpg",
-      price: "$650 K"
+      price: "$650 K",
     },
     {
       id: "Villa_Gabriel",
       title: "Villa Gabriel",
       image: "/assets/images/Villa_Gabriel/1.jpg",
-      price: "$3.6 M"
-    }
+      price: "$3.6 M",
+    },
   ];
 
   return (
@@ -205,7 +205,7 @@ const Projects = () => {
           modules={[Pagination, EffectCoverflow, Navigation]}
           navigation={{
             nextEl: ".swiper-next-button",
-            prevEl: ".swiper-prev-button"
+            prevEl: ".swiper-prev-button",
           }}
           effect="coverflow"
           coverflowEffect={{
@@ -214,7 +214,7 @@ const Projects = () => {
             depth: 100,
             modifier: 2,
             slideShadows: false,
-            scale: 0.95
+            scale: 0.95,
           }}
           pagination={{ el: ".swiper-pagination", clickable: true }}
           slidesPerView={"auto"}
@@ -252,7 +252,7 @@ const Projects = () => {
                       stroke: "#162d57",
                       strokeLinecap: "round",
                       strokeLinejoin: "round",
-                      strokeWidth: 2
+                      strokeWidth: 2,
                     }}
                   />
                   <circle
@@ -264,7 +264,7 @@ const Projects = () => {
                       stroke: "#162d57",
                       strokeLinecap: "round",
                       strokeLinejoin: "round",
-                      strokeWidth: 2
+                      strokeWidth: 2,
                     }}
                   />
                 </g>
@@ -283,7 +283,7 @@ const Projects = () => {
                 <style
                   dangerouslySetInnerHTML={{
                     __html:
-                      "\n                    .cls-1 {\n                      fill: none;\n                      stroke: #162d57;\n                      stroke-linecap: round;\n                      stroke-linejoin: round;\n                      stroke-width: 2px;\n                    }\n                  "
+                      "\n                    .cls-1 {\n                      fill: none;\n                      stroke: #162d57;\n                      stroke-linecap: round;\n                      stroke-linejoin: round;\n                      stroke-width: 2px;\n                    }\n                  ",
                   }}
                 />
               </defs>

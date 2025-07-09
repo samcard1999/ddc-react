@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AnimatedBackground from "./Background/Background";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="footer bg-mid-whitept-48 pb-16">
+    <footer id="footer" className="footer pt-48 pb-16 ">
       <div className="container-fluid relative">
         <div className="get-in-touch flex flex-col justify-center items-center color-main text-28">
           <h2>Get In Touch</h2>
@@ -14,7 +15,7 @@ const Footer = () => {
             Make an exclusive appoinment
           </a>
         </div>
-        <div className="footer-container flex items-stretch flex-col bg-mid-white br-20 gap-8">
+        <div className="footer-container flex items-stretch flex-col bg-mid-white br-20 gap-8  outline-32 outline-[#070f1d]">
           <div className="footer-section w-full flex gap-8 justify-between">
             <div className="logo_pie_de_pagina">
               <svg
