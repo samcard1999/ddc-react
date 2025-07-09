@@ -3,7 +3,6 @@ import * as THREE from "three";
 
 const AnimatedBackground = () => {
   const mountRef = useRef(null);
-
   useEffect(() => {
     const breakpoints = {
       sm: 640,
