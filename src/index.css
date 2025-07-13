@@ -260,7 +260,7 @@ a {
 }
 
 .hero {
-  background-image: radial-gradient(circle, #162d57, #162d57);
+  /* background-image: radial-gradient(circle, #162d57, #162d57); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -268,6 +268,7 @@ a {
   height: 100vh;
   min-height: 500px;
   overflow: hidden;
+  mask-image: linear-gradient(black 80%, transparent);
 }
 .main {
   flex-flow: column;
@@ -338,19 +339,19 @@ a {
 }
 
 .hero-light {
-  opacity: 0.35;
+  opacity: 0.25;
   background-image: radial-gradient(
     circle closest-side,
     rgb(129, 164, 233),
     rgb(53, 72, 105) 56%,
-    rgb(22, 50, 87) 82%,
+    rgb(53, 72, 95, 80%) 82%,
     #0000
   );
-  width: 150vw;
-  height: 150vw;
+  width: 100vw;
+  height: 100vw;
   position: absolute;
-  top: -75vw;
-  left: -75vw;
+  top: -50vw;
+  left: -50vw;
 }
 
 .hero-t {
@@ -639,7 +640,7 @@ a {
   .hero-light {
     width: 150vh;
     height: 150vh;
-    top: -75vh;
+    top: -75;
     left: -75vh;
   }
 

@@ -58,7 +58,7 @@ const Header = () => {
       }
 
       if (logo) {
-        logo.style.filter = `drop-shadow(${heroMouseOpposeX}px ${heroMouseOpposeY}px 3px rgba(15, 30, 58, 1)) drop-shadow(${heroMouseX}px ${heroMouseY}px 3px rgba(48, 68, 119, 1))`;
+        logo.style.filter = `drop-shadow(${heroMouseOpposeX}px ${heroMouseOpposeY}px 3px rgba(15, 30, 58, 50%)) drop-shadow(${heroMouseX}px ${heroMouseY}px 3px rgba(48, 68, 119, 99%))`;
       }
     };
 

@@ -511,6 +511,36 @@
             "width":310.11 ,
             "height": 186.34
         }
+    },
+        {
+        "id": "Villa_Valeria",
+        "coordenadas": [
+            { "id": 9, "floor": 1, "x": 226.03, "y": 363.69, "a": -30, "x_shadow": 124.3, "y_shadow": 125.47 },
+            { "id": 10, "floor": 1, "x": 134.8, "y": 346.6, "a": 35, "x_shadow": 124.3, "y_shadow": 153.01 },
+            { "id": 11, "floor": 1, "x": 229.27, "y": 261.85, "a": -30, "x_shadow": 185.58, "y_shadow": 125.47 },
+            { "id": 12, "floor": 1, "x": 231.29, "y": 88.13, "a": 213, "x_shadow": 185.58, "y_shadow": 130.30 },
+            { "id": 13, "floor": 1, "x": 191.77, "y": 97.5, "a": 180, "x_shadow": 185.34, "y_shadow": 139.4 },
+            { "id": 14, "floor": 2, "x": 186.64, "y": 217.28, "a": -35, "x_shadow": 134.06, "y_shadow": 125.61 },
+            { "id": 15, "floor": 2, "x": 207.44, "y": 147.61, "a": -90, "x_shadow": 134.07, "y_shadow": 123.93 },
+            { "id": 16, "floor": 2, "x": 41.77, "y": 187.93, "a": 15, "x_shadow": 34.34, "y_shadow": 143.89 },
+            { "id": 17, "floor": 2, "x": 20.46, "y": 133.28, "a": 135, "x_shadow": 53.19, "y_shadow": 167.33 },
+            { "id": 18, "floor": 2, "x": 94.94, "y": 191, "a": 0, "x_shadow": 99.15, "y_shadow": 125.61 },
+            { "id": 19, "floor": 2, "x": 172.42, "y": 319.46, "a": 180, "x_shadow": 166.97, "y_shadow": 359.33 },
+            { "id": 20, "floor": 2, "x": 176.19, "y": 216.42, "a": 187, "x_shadow": 166.97, "y_shadow": 256.34 }
+        
+        ],
+        "title": "Villa Valeria",
+        "folder": "Villa_Valeria",
+        "address": "3791 Frow Ave, Miami, Fl 33133",
+        "distribution": "4 Beds ● 3 Baths",
+        "description": "Villa Valeria is a contemporary sanctuary where refined minimalism meets organic warmth. Its clean geometry and textured finishes create a striking balance between modern sophistication and natural serenity. Inside, light-filled spaces flow effortlessly from one environment to the next, blending comfort, function, and aesthetics. From the sculptural staircase to the curated greenery, every detail is designed to elevate daily living and evoke a timeless sense of harmony.",
+        "total_images": 24,
+         "mapa": {
+            "width": 300,
+            "height":664,
+            "width_floor_2":303.42,
+            "height_floor_2":661 
+        }
     }
 
 

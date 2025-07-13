@@ -192,6 +192,12 @@ const Projects = () => {
       image: "/assets/images/Villa_Gabriel/1.jpg",
       price: "$3.6 M",
     },
+    {
+      id: "Villa_Valeria",
+      title: "Villa Valeria",
+      image: "/assets/images/Villa_Valeria/1.jpg",
+      price: "$3.6 M",
+    },
   ];
 
   return (
